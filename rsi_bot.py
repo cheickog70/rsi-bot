@@ -47,5 +47,3 @@ for nom, symbole in PAIRES.items():
     if zone(actuelle) and zone(actuelle) != zone(precedente):
         telegram(f"🚨 {nom} ({TIMEFRAME}) : RSI = {actuelle:.1f} → {zone(actuelle)}")
 
-# --- LIGNE DE TEST : à supprimer quand Telegram fonctionne ---
-telegram("✅ Test : le bot fonctionne")
