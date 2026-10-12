@@ -35,3 +35,4 @@ for nom, symbole in PAIRES.items():
     actuelle, precedente = r.iloc[-2], r.iloc[-3]
     if zone(actuelle) and zone(actuelle) != zone(precedente):
         telegram(f"🚨 {nom} ({TIMEFRAME}) : RSI = {actuelle:.1f} → {zone(actuelle)}")
+telegram("✅ Test : le bot fonctionne")
